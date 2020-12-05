@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import GlobalStyle from "./GlobalStyles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import Container from "./components/Container/Container";
