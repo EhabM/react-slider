@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { device } from "../../GlobalStyles/mediaQueries";
 
-export default function Image(props) {
+export default function Image({ imgIndex, imgSrc }) {
   return (
     <ImgCont>
-      <Img alt={props.imageIndex} src={props.imageSrc} />
+      <img alt={imgIndex} src={imgSrc} />
     </ImgCont>
   );
 }
@@ -13,7 +12,8 @@ export default function Image(props) {
 const ImgCont = styled.div`
   width: 100%;
   height: 100%;
-`;
-const Img = styled.img`
-  width: 100%;
+  > img {
+    transition: all 1s ease-in-out;
+    width: 100%;
+  }
 `;
